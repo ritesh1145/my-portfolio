@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="100%" height="100%" fill="#071a22"/>
+  <rect x="30" y="30" width="220" height="120" rx="12" fill="#082b33"/>
+  <rect x="270" y="30" width="480" height="120" rx="12" fill="#06292f"/>
+  <text x="60" y="95" fill="#67e8f9" font-size="18" font-family="Inter">Alumni Network</text>
+</svg>

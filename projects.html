@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Projects — Ritesh Singh" />
+  <title>Projects — Ritesh Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="index.html" class="logo">Ritesh<span>Dev</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="career.html" class="nav-link">Career</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects reveal">
+      <h1>Projects</h1>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="assets/images/project1.svg" alt="Alumni Network Platform" />
+          <div class="project-body">
+            <h3>Alumni Network Platform</h3>
+            <p>MERN stack platform connecting alumni and students to facilitate mentorship and opportunities.</p>
+            <p class="tech">Technologies: MongoDB, Express, React, Node.js</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project2.svg" alt="CareerConnect Job Portal" />
+          <div class="project-body">
+            <h3>CareerConnect Job Portal</h3>
+            <p>Job portal with role-based access, resume parsing, and search filters.</p>
+            <p class="tech">Technologies: Node.js, Express, MongoDB</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project3.svg" alt="Skin Disease Detection" />
+          <div class="project-body">
+            <h3>Skin Disease Detection</h3>
+            <p>Machine Learning model to classify skin conditions with a web interface for uploads.</p>
+            <p class="tech">Technologies: Python, TensorFlow, Flask</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project4.svg" alt="Weather Application" />
+          <div class="project-body">
+            <h3>Weather Application</h3>
+            <p>Responsive weather app using public APIs with local caching and animations.</p>
+            <p class="tech">Technologies: JavaScript, APIs, CSS</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project5.svg" alt="To-Do List" />
+          <div class="project-body">
+            <h3>To-Do List Application</h3>
+            <p>Lightweight to-do app with localStorage persistence and touch-friendly UI.</p>
+            <p class="tech">Technologies: JavaScript, HTML, CSS</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Ritesh Singh — Built with HTML, CSS &amp; Vanilla JS</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

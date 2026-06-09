@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="100%" height="100%" fill="#071a22"/>
+  <circle cx="120" cy="110" r="50" fill="#5eead4"/>
+  <text x="60" y="220" fill="#9feadc" font-size="18" font-family="Inter">Skin Disease Detection</text>
+</svg>

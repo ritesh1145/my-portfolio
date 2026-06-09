@@ -1,84 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ritesh Singh - Full Stack Developer portfolio" />
+  <title>Ritesh Singh — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-       
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Loading overlay -->
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+  </div>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Hello! I'm Ritesh Singh, a Computer Science Student. Welcome to my personal portfolio website where I showcase my skills, projects, and contact information.</p>
-        </section>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="index.html" class="logo">Ritesh<span>Dev</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="career.html" class="nav-link">Career</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
 
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>"Hello! I'm a Computer Science B.Tech student enthusiastic about coding and innovation. Eager to learn and grow, I'm seeking opportunities to expand my skills and contribute to exciting projects. Let's connect and explore the possibilities together!".</p>
-            <h3>Skills</h3>
-            <ul>
-                <li>Problem Solving</li>
-                <li>Java</li>
-                <li>C</li>
-                <li>Python</li>
-                <li>HTML</li>
-            </ul>
-            <h3>Education</h3>
-            <p>B.tech(2 year)</p>
-        </section>
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-left">
+          <h1>Hi, I'm <span class="name">Ritesh Singh</span></h1>
+          <p class="subtitle">Full Stack Developer | Java Developer</p>
+          <p class="lead">Passionate about building efficient, scalable, and user-friendly software solutions. I love
+            solving problems and learning new technologies.</p>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project 1</h3>
-                    <p>Student Management in C</p>
-                </li>
-                <li>
-                    <h3>Project 2</h3>
-                    <p>Coffe Junkee </p>
-                </li>
-                <li>
-                    <h3>Project 3</h3>
-                    <p>Webpage for a Resturant </p>
-                </li>
-            </ul>
-        </section>
+          <div class="typing">Skills: <span id="typing"></span><span class="cursor">|</span></div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <br>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+          <div class="hero-ctas">
+            <a class="btn primary" href="assets/resume/Ritesh_Singh_Resume.pdf" download>Download Resume <i
+                class="fa fa-download"></i></a>
+            <a class="btn outline" href="assets/resume/Ritesh_Singh_Resume.pdf" target="_blank" rel="noopener">View
+              Resume</a>
+            <a class="btn outline" href="contact.html">Contact Me <i class="fa fa-paper-plane"></i></a>
+          </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025. All rights reserved.</p>
-        <p>Find me on <a href="https://www.linkedin.com/in/ritesh-singh-591aba2a6/">LinkedIn</a></p>
-    </footer>
+        <aside class="hero-right" aria-labelledby="profile-heading">
+          <div class="card glass profile-card">
+            <img src="assets/images/profile.png" alt="Profile" class="profile-img" />
+            <div class="profile-info">
+              <h3 id="profile-heading">Ritesh Singh</h3>
+              <p>Full Stack Developer</p>
+              <div class="socials">
+                <a href="https://github.com/ritesh1145" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ritesh-singh-591aba2a6" aria-label="LinkedIn" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:riteshs1145@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 'More' section removed per request -->
+  </main>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa fa-angle-up"></i></button>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Ritesh Singh — Built with HTML, CSS &amp; Vanilla JS</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
