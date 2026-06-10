@@ -12,6 +12,9 @@ Features:
 To run locally:
 1. Open `index.html` in your browser.
 
+Live demo:
+- Deployed: https://my-portfolio-psi-five-55.vercel.app/ (Ritesh Singh — Full Stack Developer)
+
 Project structure:
 ```
 portfolio/
